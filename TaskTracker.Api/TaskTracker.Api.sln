@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskTracker.Api", "TaskTracker.Api\TaskTracker.Api.csproj", "{8B6A6B24-BB68-4686-85F4-AD341CFCDA85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B6A6B24-BB68-4686-85F4-AD341CFCDA85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B6A6B24-BB68-4686-85F4-AD341CFCDA85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B6A6B24-BB68-4686-85F4-AD341CFCDA85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B6A6B24-BB68-4686-85F4-AD341CFCDA85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB3C8B32-3E2F-4CBD-B140-03A5EC839B5C}
+	EndGlobalSection
+EndGlobal

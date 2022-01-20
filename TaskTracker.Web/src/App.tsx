@@ -11,7 +11,7 @@ function App() {
 
   const [showAddTask, setShowAddTask] = useState<boolean>(false);
   const [tasks, setTasks] = useState<ITask[]>([]);
-  const baseUrl = 'http://localhost:5000/tasks';
+  const baseUrl = 'https://localhost:44325/api/task';
 
   useEffect(() => {
     const getTasks = async () => {
@@ -36,7 +36,7 @@ function App() {
 
   const addTask = async (task: ITask) => {
     
-    const response = await fetch(`${baseUrl}`, {
+    const response = await fetch(`${baseUrl}/add`, {
       method: 'POST'
       , headers: {
         'Content-type': 'application/json'
@@ -51,7 +51,7 @@ function App() {
 
   const deleteTask = async (id: number) => {
     
-    await fetch(`${baseUrl}/${id}`, {
+    await fetch(`${baseUrl}/${id}/delete`, {
       method: 'DELETE'
     });
 
@@ -62,7 +62,7 @@ function App() {
     const taskToToggle:ITask = await fetchTask(id);
     const updatedTask:ITask = { ...taskToToggle, reminder: !taskToToggle.reminder};
 
-    const response = await fetch(`${baseUrl}/${id}`,{
+    const response = await fetch(`${baseUrl}/toggle`,{
       method: 'PUT'
       , headers: {
         'Content-type': 'application/json'
